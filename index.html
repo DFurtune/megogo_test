@@ -14,124 +14,139 @@
     />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="../src/jquery.fsscroll.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="../src/jquery.fsscroll.js"></script>
   </head>
   <body>
-    <section class="welcome">
-      <div id="primaryNav">
-        <nav>
-          <!-- Spinning Hamburger Button -->
-          <button class="hamburger hamburger--spin" type="button">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
+    <div class="container" data-fs-scroll>
+<div class="sections">
 
-          <div id="popUpNav" class="overlay" onclick="closeNav()">
-            <div class="overlay-content">
-              <a href="#problemSolution" data-scroll onclick="closeNav()"
-                >Link 1</a
-              >
-              <a href="#" data-scroll onclick="closeNav()">Link 2</a>
-              <a href="#" data-scroll onclick="closeNav()">Link 3</a>
-              <a href="#" data-scroll onclick="closeNav()">Link 4</a>
-            </div>
-          </div>
-        </nav>
-      </div>
-      <!--  End Primary Nav -->
-      <div class="welcome-wrapper">
-        <h1>Дивіться ТБ та кіно без реклами в єдиній передплаті</h1>
-        <p>
-          Популярні телеканали та величезна бібліотека фільмів, серіалів,
-          мультфільмів, трансляцій у єдиній передплаті.
-        </p>
-      </div>
-      <a class="scroll-link" href="#sub-info"
-        ><img src="./src/vector-scroll.svg" alt=""
-      /></a>
-    </section>
-    <section class="welcome-sub-info" id="sub-info">
-      <h2>Дивіться фільми без інтернету</h2>
-      <p class="body-text">Завантаження фільмів та серіалів на ваш пристрій.</p>
-      <img class="iphone-img" src="./src/iPhone.png" alt="" />
-      <div class="rectangle iphone-rectangle"></div>
-    </section>
-    <section class="welcome-top-sale">
-      <div class="top-sale-name">
-        Передплата
-        <h3>Оптимальна</h3>
-      </div>
-      <div class="top-sale-description">
-        <h2>10000 фільмів та 160+ каналів</h2>
-        Голлівудська класика та свіжі<br />
-        кіно-новинки за підпискою,<br />
-        прямі футбольні трансляції та<br />
-        понад 160 каналів
-      </div>
-      <div class="top-sale-price">
-        <h3>від 1 грн</h3>
-        <button class="main-button try-button">Спробувати</button>
-        <div class="top-sale-ligal">
-          Перші 14 днів за 1 грн,
-          <br />
-          далі – 97 грн/міс.
-        </div>
-        <a class="details-link" href="#">Детальніше</a>
-      </div>
-    </section>
-    <section class="welcome-partner-gifts">
-      <div class="partner-gifts-headline">
-        <h2>
-          Подарунки від партнерів<br />
-          при кожному<br />
-          продовженні передплати
-        </h2>
-        <p class="body-text">
-          Сертифікати на знижки від WOG, Сушія, Антошка, Єва та ін.
-        </p>
-      </div>
-      <div class="partner-gifts-cards">
-        <!-- В макеті картки змержені в одне зображення. Немає змоги зверстати
-				кожну картку партнера окремо -->
-        <a href="#">
-          <img src="./src/partners.png" alt="" />
-        </a>
-        <div class="rectangle rectangle-gifts"></div>
-      </div>
-    </section>
-    <section class="welcome-subscription">
-      <div class="welcome-subscription-headline">
-        <h2>
-          Підключіть передплату<br />
-          за 1 грн та отримуйте:
-        </h2>
-      </div>
-      <div class="welcome-subscription-content">
-        <div class="welcome-subscription-content-wrapper">
-          <div class="welcome-subscription-content-item">
-            <h4>ТВ-архів</h4>
-            <p>телепередач до 14 днів</p>
-          </div>
-          <div class="welcome-subscription-content-item">
-            <h4>Full HD</h4>
-            <p>якість тільки за передплатою</p>
-          </div>
-          <div class="welcome-subscription-content-item">
-            <h4>10% знижка</h4>
-            <p>на прем'єри</p>
-          </div>
-          <div class="welcome-subscription-content-item">
-            <h4>5 пристроїв</h4>
-            <p>в одній передплаті</p>
-          </div>
-          <div class="welcome-subscription-content-item">
-            <h4>Без реклами</h4>
-            <p>на всіх фільмах та мультфільмах</p>
+  <section class="welcome section section0">
+    <div id="primaryNav">
+      <nav>
+        <!-- Spinning Hamburger Button -->
+        <button class="hamburger hamburger--spin" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+  
+        <div id="popUpNav" class="overlay" onclick="closeNav()">
+          <div class="overlay-content">
+            <a href="#problemSolution" data-scroll onclick="closeNav()"
+              >Link 1</a
+            >
+            <a href="#" data-scroll onclick="closeNav()">Link 2</a>
+            <a href="#" data-scroll onclick="closeNav()">Link 3</a>
+            <a href="#" data-scroll onclick="closeNav()">Link 4</a>
           </div>
         </div>
+      </nav>
+    </div>
+    <!--  End Primary Nav -->
+    <div class="welcome-wrapper">
+      <h1>Дивіться ТБ та кіно без реклами в єдиній передплаті</h1>
+      <p>
+        Популярні телеканали та величезна бібліотека фільмів, серіалів,
+        мультфільмів, трансляцій у єдиній передплаті.
+      </p>
+    </div>
+    <a class="scroll-link" href="#sub-info"
+      ><img src="./src/vector-scroll.svg" alt=""
+    /></a>
+  </section>
+  <section class="welcome-sub-info section section1" id="sub-info">
+    <h2>Дивіться фільми без інтернету</h2>
+    <p class="body-text">Завантаження фільмів та серіалів на ваш пристрій.</p>
+    <img class="iphone-img" src="./src/iPhone.png" alt="" />
+    <div class="rectangle iphone-rectangle"></div>
+  </section>
+  <section class="welcome-top-sale section section2">
+    <div class="top-sale-name">
+      Передплата
+      <h3>Оптимальна</h3>
+    </div>
+    <div class="top-sale-description">
+      <h2>10000 фільмів та 160+ каналів</h2>
+      Голлівудська класика та свіжі<br />
+      кіно-новинки за підпискою,<br />
+      прямі футбольні трансляції та<br />
+      понад 160 каналів
+    </div>
+    <div class="top-sale-price">
+      <h3>від 1 грн</h3>
+      <button class="main-button try-button">Спробувати</button>
+      <div class="top-sale-ligal">
+        Перші 14 днів за 1 грн,
+        <br />
+        далі – 97 грн/міс.
       </div>
-      <button class="main-button subscription-button">Підключити</button>
-    </section>
+      <a class="details-link" href="#">Детальніше</a>
+    </div>
+  </section>
+  <section class="welcome-partner-gifts section section3">
+    <div class="partner-gifts-headline">
+      <h2>
+        Подарунки від партнерів<br />
+        при кожному<br />
+        продовженні передплати
+      </h2>
+      <p class="body-text">
+        Сертифікати на знижки від WOG, Сушія, Антошка, Єва та ін.
+      </p>
+    </div>
+    <div class="partner-gifts-cards">
+      <!-- В макеті картки змержені в одне зображення. Немає змоги зверстати
+      кожну картку партнера окремо -->
+      <a href="#">
+        <img src="./src/partners.png" alt="" />
+      </a>
+      <div class="rectangle rectangle-gifts"></div>
+    </div>
+  </section>
+  <section class="welcome-subscription section section4">
+    <div class="welcome-subscription-headline">
+      <h2>
+        Підключіть передплату<br />
+        за 1 грн та отримуйте:
+      </h2>
+    </div>
+    <div class="welcome-subscription-content">
+      <div class="welcome-subscription-content-wrapper">
+        <div class="welcome-subscription-content-item">
+          <h4>ТВ-архів</h4>
+          <p>телепередач до 14 днів</p>
+        </div>
+        <div class="welcome-subscription-content-item">
+          <h4>Full HD</h4>
+          <p>якість тільки за передплатою</p>
+        </div>
+        <div class="welcome-subscription-content-item">
+          <h4>10% знижка</h4>
+          <p>на прем'єри</p>
+        </div>
+        <div class="welcome-subscription-content-item">
+          <h4>5 пристроїв</h4>
+          <p>в одній передплаті</p>
+        </div>
+        <div class="welcome-subscription-content-item">
+          <h4>Без реклами</h4>
+          <p>на всіх фільмах та мультфільмах</p>
+        </div>
+      </div>
+    </div>
+    <button class="main-button subscription-button">Підключити</button>
+  </section>
+</div>
+    </div>
     <script src="./main.js"></script>
+    <script>
+      $(".container").fsScroll({
+        direction: "vertical",
+        duration: 350,
+        keyboard: true,
+      });
+    </script>
   </body>
 </html>
